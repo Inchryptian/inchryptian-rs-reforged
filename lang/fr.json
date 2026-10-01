@@ -1,0 +1,130 @@
+{
+    "rsreforged": {
+        "settings": {
+            "enableVanillaQuickRoll.name": "Utiliser les jets classiques avec le style RSReforged",
+            "enableVanillaQuickRoll.hint": "Interrupteur principal du comportement des jets rapides. Activé : RSReforged conserve les boîtes de dialogue normales de dnd5e et le flux classique (y compris les jets automatiques d'attaque et de dégâts pour les activités d'objet) et ajoute uniquement son style par-dessus — les quatre options « Activer le Jet Rapide » ci-dessous sont ignorées. Désactivé : RSReforged prend le contrôle des jets rapides activés et lance l'attaque, les dégâts, les soins et les formules sur la carte de jet rapide.",
+            "enableAbilityQuickRoll.name": "Activer le Jet Rapide pour les Capacités",
+            "enableAbilityQuickRoll.hint": "Lors du clic sur une caractéristique ou un jet de sauvegarde, effectue un jet rapide dans le chat au lieu d'utiliser la boîte de dialogue habituelle. Maintenez le modificateur dnd5e 'Ignorer la Boîte de Dialogue' (Shift par défaut) en cliquant pour utiliser la boîte de dialogue dnd5e normale pour ce jet. Sans effet lorsque « Utiliser les jets classiques avec le style RSReforged » est activé.",
+            "enableSkillQuickRoll.name": "Activer le Jet Rapide pour les Compétences",
+            "enableSkillQuickRoll.hint": "Lors du clic sur une compétence, effectue automatiquement un jet dans le chat au lieu d'utiliser la boîte de dialogue habituelle. Maintenez le modificateur dnd5e 'Ignorer la Boîte de Dialogue' (Shift par défaut) en cliquant pour utiliser la boîte de dialogue dnd5e normale pour ce jet. Sans effet lorsque « Utiliser les jets classiques avec le style RSReforged » est activé.",
+            "enableToolQuickRoll.name": "Activer le Jet Rapide pour les Outils",
+            "enableToolQuickRoll.hint": "Lors du clic sur un test d'outil, effectue un jet rapide dans le chat au lieu d'utiliser la boîte de dialogue habituelle. Maintenez le modificateur dnd5e 'Ignorer la Boîte de Dialogue' (Shift par défaut) en cliquant pour utiliser la boîte de dialogue dnd5e normale pour ce jet. Sans effet lorsque « Utiliser les jets classiques avec le style RSReforged » est activé.",
+            "enableActivityQuickRoll.name": "Activer le Jet Rapide pour les Activités",
+            "enableActivityQuickRoll.hint": "Lors du clic sur une activité liée à un objet, effectue automatiquement un jet dans le chat au lieu d'utiliser la boîte de dialogue habituelle. Maintenez le modificateur dnd5e 'Ignorer la Boîte de Dialogue' (Shift par défaut) en cliquant pour utiliser la boîte de dialogue dnd5e normale pour cette activité. Sans effet lorsque « Utiliser les jets classiques avec le style RSReforged » est activé.",
+            "alwaysRollMulti.name": "Toujours Lancer Plusieurs Dés",
+            "alwaysRollMulti.hint": "Lors d'un jet rapide, lance toujours deux dés (ou trois pour la Précision Elfique) même si l'avantage/désavantage n'est pas appliqué.",
+            "manualDamageMode.name": "Lancer les Dégâts Manuellement",
+            "manualDamageMode.hint": "Lors d'un jet rapide, ne lance pas automatiquement les dégâts. Affiche plutôt un bouton pour lancer les dégâts manuellement, si disponible.",
+            "aggregateDamage.name": "Fusionner les Champs de Dégâts",
+            "aggregateDamage.hint": "Lors d'un jet rapide, combine tous les champs de dégâts du même type en un seul champ.",
+            "enableD20Icons.name": "Afficher les Résultats du D20 pour les Jets Rapides",
+            "enableD20Icons.hint": "Lors d'un jet rapide, affiche une icône montrant le résultat naturel du dé à côté du total.",
+            "hideNpcRollMode.name": "Masquer les Résultats des Jets PNJ",
+            "hideNpcRollMode.hint": "Pour les jets rapides effectués par des acteurs qu'un joueur ne possède pas, masque le total modifié et les modificateurs afin que seul le résultat naturel du d20 soit visible. Les totaux de dégâts et de soins restent toujours visibles. Le MJ et les propriétaires de l'acteur voient toujours les résultats complets.",
+            "hideNpcRollStyle.name": "Style de Jet Masqué",
+            "hideNpcRollStyle.hint": "Contrôle ce qui est masqué lorsqu'un jet PNJ est masqué (voir Masquer les Résultats des Jets PNJ). « Masquer le Total » masque le total modifié et affiche le d20 naturel. « Masquer le Détail » révèle le total final mais masque la valeur naturelle du d20 et tous les modificateurs.",
+            "enableHideFinalResult.name": "Masquer le Résultat des Attaques PNJ (Hérité)",
+            "enableHideFinalResult.hint": "Paramètre hérité conservé pour les anciens mondes. Utilisez Masquer les Résultats des Jets PNJ.",
+            "enableDiceReroll.name": "Activer le Relancer de Dés",
+            "enableDiceReroll.hint": "Lors d'un jet rapide, permet de cliquer sur un dé spécifique dans l'infobulle du message de chat pour relancer ce dé sur place.",
+            "enableOverlayButtons.name": "Activer les Boutons de Superposition",
+            "enableOverlayButtons.hint": "Lors d'un jet rapide, active des boutons de superposition sur le message de chat offrant des fonctionnalités supplémentaires pour le jet.",
+            "damageApplyMode.name": "Interface d'Application des Dégâts",
+            "damageApplyMode.hint": "Choisit une seule interface d'application des dégâts pour les cartes de jet rapide. Le panneau dnd5e affiche des lignes par cible et applique les dégâts avec le flux natif du système. Les boutons rapides RSReforged affichent les contrôles total/moitié/quart/double directement sur le jet de dégâts.",
+            "enableDamageButtons.name": "Activer les Boutons d'Application des Dégâts (Hérité)",
+            "enableDamageButtons.hint": "Paramètre hérité conservé pour les anciens mondes. Utilisez plutôt Interface d'Application des Dégâts.",
+            "alwaysShowButtons.name": "Toujours Afficher les Boutons RSReforged",
+            "alwaysShowButtons.hint": "S'applique uniquement quand Interface d'Application des Dégâts est réglée sur Boutons Rapides RSReforged. Si désactivé, ces boutons apparaissent seulement au survol.",
+            "applyDamageTo.name": "Cibles des Boutons RSReforged",
+            "applyDamageTo.hint": "S'applique uniquement quand Interface d'Application des Dégâts est réglée sur Boutons Rapides RSReforged. Détermine si ces boutons appliquent les dégâts aux jetons sélectionnés, ciblés, ou les deux.",
+            "confirmRetroAdv.name": "Confirmer l'Avantage Rétroactif",
+            "confirmRetroAdv.hint": "Affiche une boîte de confirmation lors du changement rétroactif d'un jet en avantage ou désavantage.",
+            "confirmRetroCrit.name": "Confirmer les Critiques Rétroactives",
+            "confirmRetroCrit.hint": "Affiche une boîte de confirmation lors du changement rétroactif d'un jet en dégâts critiques."
+        },
+        "choices": {
+            "rollModifierMode": {
+                "shiftAdv": "Shift ➔ Avantage, Ctrl/Cmd ➔ Désavantage",
+                "ctrlAdv": "Ctrl/Cmd ➔ Avantage, Shift ➔ Désavantage"
+            },
+            "apply": {
+                "0": "Appliquer aux jetons sélectionnés",
+                "1": "Appliquer aux jetons ciblés",
+                "2": "Appliquer aux deux",
+                "3": "Prioriser les jetons sélectionnés",
+                "4": "Prioriser les jetons ciblés"
+            },
+            "damageApplyMode": {
+                "dnd5e": "Panneau natif dnd5e par cible",
+                "rsr": "Boutons rapides RSReforged"
+            },
+            "manual": {
+                "0": "Jamais",
+                "1": "Seulement pour les jets d'attaque",
+                "2": "Toujours"
+            },
+            "hideNpcRollMode": {
+                "none": "Désactivé",
+                "attacks": "Attaques PNJ uniquement",
+                "all": "Tous les jets d20 PNJ (sauf dégâts)"
+            },
+            "hideNpcRollStyle": {
+                "total": "Masquer le Total (afficher le d20 naturel)",
+                "breakdown": "Masquer le Détail (afficher le total final)"
+            }
+        },
+        "sheet": {
+            "tab": {
+                "title": "Jet Rapide",
+                "section": {
+                    "defaultRoll": "Options de Jet par Défaut",
+                    "alternateRoll": "Options de Jet Alternatif"
+                },
+                "subsection": {
+                    "main": "Contenu Principal",
+                    "damage": "Jets de Dégâts"
+                }
+            },
+            "placeholder": {
+                "context": "Contexte",
+                "label": "Étiquette"
+            }
+        },
+        "chat": {
+            "buttons": {
+                "damageFull": "Cliquez pour appliquer les dégâts complets aux jetons sélectionnés.",
+                "damageHalf": "Cliquez pour appliquer la moitié des dégâts aux jetons sélectionnés.",
+                "damageQuarter": "Cliquez pour appliquer un quart des dégâts aux jetons sélectionnés.",
+                "damageDouble": "Cliquez pour appliquer le double des dégâts aux jetons sélectionnés.",
+                "healing": "Cliquez pour appliquer les soins aux jetons sélectionnés.",
+                "healingTemp": "Cliquez pour appliquer des points de vie temporaires aux jetons sélectionnés.",
+                "rollCrit": "Cliquez pour lancer des dégâts critiques.",
+                "rollAdvantage": "Cliquez pour lancer avec avantage.",
+                "rollDisadvantage": "Cliquez pour lancer avec désavantage.",
+                "repeat": "Cliquez pour répéter le jet rapide.",
+                "damageType": "Cliquez pour changer le type de dégâts."
+            },
+            "prompts": {
+                "retroCrit": "Améliorer en Critique ?",
+                "retroAdv": "Lancer {target} ?"
+            }
+        },
+        "messages": {
+            "error": {
+                "incorrectTargetState": "Impossible d'améliorer un jet à l'état '{state}' car ce n'est pas un état valide (avantage ou désavantage).",
+                "rollIsNullOrUndefined": "Le jet fourni est nul ou indéfini.",
+                "termIsNullOrUndefined": "Le terme fourni est nul ou indéfini.",
+                "applyDamageNoPermission": "Vous n'avez pas la permission d'appliquer des dégâts depuis ce message.",
+                "applyDamageNoTokens": "Aucun jeton sélectionné ou ciblé pour appliquer les dégâts."
+            },
+            "warning": {
+                "emptyDamageField": "Un ou plusieurs champs de dégâts pour cet objet sont vides ! Pour lancer les dégâts, assurez-vous que tous les champs de dégâts sont remplis."
+            }
+        },
+        "bonus": {
+            "damageType": "Type de dégâts :",
+            "randomType": "Type aléatoire : {types}",
+            "fixedType": "Dégâts de {type}"
+        }
+    }
+}

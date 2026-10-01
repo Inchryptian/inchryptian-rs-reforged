@@ -1,0 +1,152 @@
+{
+    "rsreforged": {        
+        "settings": {
+            "enableVanillaQuickRoll.name": "Use Vanilla Rolls with RSReforged Styling",
+            "enableVanillaQuickRoll.hint": "Master switch for the quick-roll behavior. When enabled, RSReforged keeps dnd5e's normal roll dialogs and vanilla workflow (including automatic attack and damage rolls for item activities) and only adds RSReforged styling on top — the four 'Enable Quick Roll' options below are ignored. When disabled, RSReforged takes over enabled quick rolls and rolls attack, damage, healing, and formulas on the quick-roll card.",
+            "enableAbilityQuickRoll.name": "Enable Quick Roll for Abilities",
+            "enableAbilityQuickRoll.hint": "When clicking on an ability check or saving throw, quick roll to chat instead of using the normal roll dialog. Hold the dnd5e 'Skip Dialog' modifier (Shift by default) while clicking to use the normal dnd5e dialog for that roll. Has no effect when 'Use Vanilla Rolls with RSReforged Styling' is enabled.",
+            "enableSkillQuickRoll.name": "Enable Quick Roll for Skills",
+            "enableSkillQuickRoll.hint": "When clicking on a skill check, automatically roll to chat instead of using the normal roll dialog. Hold the dnd5e 'Skip Dialog' modifier (Shift by default) while clicking to use the normal dnd5e dialog for that roll. Has no effect when 'Use Vanilla Rolls with RSReforged Styling' is enabled.",
+            "enableToolQuickRoll.name": "Enable Quick Roll for Tool Checks",
+            "enableToolQuickRoll.hint": "When clicking on a tool check, quick roll to chat instead of using the normal roll dialog. Hold the dnd5e 'Skip Dialog' modifier (Shift by default) while clicking to use the normal dnd5e dialog for that roll. Has no effect when 'Use Vanilla Rolls with RSReforged Styling' is enabled.",
+            "enableActivityQuickRoll.name": "Enable Quick Roll for Activities",
+            "enableActivityQuickRoll.hint": "When clicking on an activity for an item, automatically roll to chat instead of using the normal roll dialog. Hold the dnd5e 'Skip Dialog' modifier (Shift by default) while clicking to use the normal dnd5e dialog for that activity. Has no effect when 'Use Vanilla Rolls with RSReforged Styling' is enabled.",
+            "alwaysRollMulti.name": "Always Roll Multiple Dice",
+            "alwaysRollMulti.hint": "When outputting a quick roll, always roll two dice (or three for Elven Accuracy) even when advantage/disadvantage is not applied.",
+            "manualDamageMode.name": "Roll Damage Manually",
+            "manualDamageMode.hint": "When outputting a quick roll, do not quick roll damage. Instead, show a damage button to manually roll if there is damage available.",
+            "aggregateDamage.name": "Aggregate Damage Fields",
+            "aggregateDamage.hint": "When outputting a quick roll, combine all damage fields of the same type into a single field.",
+            "enableD20Icons.name": "Show D20 Rolls for Quick Rolls",
+            "enableD20Icons.hint": "When outputting a quick roll, display an icon showing the natural die roll next to the total result.",
+            "hideNpcRollMode.name": "Hide NPC Roll Results",
+            "hideNpcRollMode.hint": "For quick rolls made by actors a player does not own, hide the modified total and modifiers so only the natural d20 result is visible. Damage and healing totals are always shown. GMs and actor owners always see full results.",
+            "hideNpcRollStyle.name": "Hidden Roll Style",
+            "hideNpcRollStyle.hint": "Controls what is masked when an NPC roll is hidden (see Hide NPC Roll Results). 'Hide Total' masks the modified total and shows the natural d20. 'Hide Breakdown' reveals the final total but masks the natural d20 value and all modifiers.",
+            "enableHideFinalResult.name": "Hide Result of NPC Attacks (Legacy)",
+            "enableHideFinalResult.hint": "Legacy setting preserved for older worlds. Use Hide NPC Roll Results instead.",
+            "enableDiceReroll.name": "Enable Dice Rerolling",
+            "enableDiceReroll.hint": "When outputting a quick roll, enable the ability to click a specific die in the chat message tooltip to reroll that die in place.",
+            "enableOverlayButtons.name": "Enable Overlay Buttons",
+            "enableOverlayButtons.hint": "When outputting a quick roll, enable overlay buttons on the chat message that offer additional functionality for the roll.",
+            "damageApplyMode.name": "Damage Apply UI",
+            "damageApplyMode.hint": "Choose one damage application interface for quick-roll damage cards. The dnd5e tray shows per-target rows and applies damage using the system's native workflow. RSReforged quick buttons show full/half/quarter/double controls directly on the damage roll.",
+            "enableDamageButtons.name": "Enable Damage Apply Buttons (Legacy)",
+            "enableDamageButtons.hint": "Legacy setting preserved for older worlds. Use Damage Apply UI instead.",
+            "alwaysShowButtons.name": "Always Show RSReforged Apply Buttons",
+            "alwaysShowButtons.hint": "Only applies when Damage Apply UI is set to RSReforged Quick Buttons. If disabled, those quick apply buttons appear only on hover.",
+            "applyDamageTo.name": "RSReforged Apply Button Targets",
+            "applyDamageTo.hint": "Only applies when Damage Apply UI is set to RSReforged Quick Buttons. Determines whether those buttons apply damage to selected tokens, targeted tokens, or both.",
+            "confirmRetroAdv.name": "Confirm Retroactive Advantage",
+            "confirmRetroAdv.hint": "Show a confirmation dialog when retroactively changing a roll to advantage or disadvantage.",
+            "confirmRetroCrit.name": "Confirm Retroactive Crits",
+            "confirmRetroCrit.hint": "Show a confirmation dialog when retroactively changing a roll to critical damage.",
+            "rerollEveryone.name": "Enable Interactive Dice (Master Switch)",
+            "rerollEveryone.hint": "Master switch for clickable dice rerolling and GM fudging. If disabled, no one can reroll dice by clicking, regardless of the per-role settings below.",
+            "rerollPlayers.name": "Allow Players to Reroll Their Own Dice",
+            "rerollPlayers.hint": "If enabled, players can left-click any die in the chat tooltip of a roll they made to reroll that die in place. GMs can always reroll any die.",
+            "fudgeGM.name": "Allow GM Dice Fudging",
+            "fudgeGM.hint": "If enabled, the GM can right-click any die in the chat tooltip to manually set its result via a prompt.",
+            "rerollSoundEnabled.name": "Reroll Sound & Dice So Nice",
+            "rerollSoundEnabled.hint": "When a die is rerolled, play the configured dice sound and animate the rerolled die in 3D via Dice So Nice if installed. If Dice So Nice is not available, the dice sound is still played as a fallback.",
+            "rerollLogChat.name": "Log Rerolls to Chat",
+            "rerollLogChat.hint": "When a die is rerolled, post a public chat message announcing the reroll (e.g. \"Alice rerolled a d20: 7 → 14\"). The message respects the current roll mode (public/whisper/blind/self)."
+        },
+        "choices": {
+            "rollModifierMode": {
+                "shiftAdv": "Shift ➔ Advantage, Ctrl/Cmd ➔ Disadvantage",
+                "ctrlAdv": "Ctrl/Cmd ➔ Advantage, Shift ➔ Disadvantage"
+            },
+            "apply": {
+                "0": "Apply to Selected Tokens",
+                "1": "Apply to Targeted Tokens",
+                "2": "Apply to Both",
+                "3": "Prioritise Selected Tokens",
+                "4": "Prioritise Targeted Tokens"
+            },
+            "damageApplyMode": {
+                "dnd5e": "dnd5e Native Per-Target Tray",
+                "rsr": "RSReforged Quick Buttons"
+            },
+            "manual": {
+                "0": "Never",
+                "1": "Attack Rolls Only",
+                "2": "Always"
+            },
+            "hideNpcRollMode": {
+                "none": "Off",
+                "attacks": "NPC Attacks Only",
+                "all": "All NPC d20 Rolls (Except Damage)"
+            },
+            "hideNpcRollStyle": {
+                "total": "Hide Total (show natural d20)",
+                "breakdown": "Hide Breakdown (show final total)"
+            }
+        },
+        "sheet": {
+            "tab": {
+                "title": "Quick Roll",
+                "section": {
+                    "defaultRoll": "Default Roll Options",
+                    "alternateRoll": "Alternate Roll Options"
+                },
+                "subsection": {
+                    "main": "Main Content",
+                    "damage": "Damage Rolls"
+                }
+            },
+            "placeholder": {
+                "context": "Context",
+                "label": "Label"
+            }
+        },
+        "keybindings": {
+            "versatileTwoHanded": {
+                "name": "Use Versatile Two-Handed",
+                "hint": "Hold this key when clicking a Versatile weapon attack (longsword, quarterstaff, etc.) to roll it two-handed. Default: V. Releases automatically after the click — no toggle to remember. Has no effect on non-Versatile weapons."
+            }
+        },
+        "chat": {
+            "buttons": {
+                "damageFull": "Click to apply full damage to selected token(s).",
+                "damageHalf": "Click to apply half damage to selected token(s).",
+                "damageQuarter": "Click to apply quarter damage to selected token(s).",
+                "damageDouble": "Click to apply double damage to selected token(s).",
+                "healing": "Click to apply healing to selected token(s).",
+                "healingTemp": "Click to apply temporary hitpoints to selected token(s).",
+                "rollCrit": "Click to roll critical damage.",
+                "rollAdvantage": "Click to roll with advantage.",
+                "rollDisadvantage": "Click to roll with disadvantage.",
+                "repeat": "Click to repeat the quick roll.",
+                "damageType": "Click to change the damage type."
+            },
+            "prompts": {
+                "retroCrit": "Upgrade to Crit?",
+                "retroAdv": "Roll {target}?"
+            },
+            "hide": "???",
+            "reroll": {
+                "log": "<strong>{user}</strong> rerolled a d{faces}: <span class=\"rsr-reroll-old\">{old}</span> &rarr; <span class=\"rsr-reroll-new\">{new}</span>",
+                "flavor": "Reroll",
+                "notification": "Rerolled die: New result is {new}"
+            }
+        },
+        "messages": {
+            "error": {
+                "incorrectTargetState": "Cannot ugprade a roll to target state '{state}' because it is not a valid state (advantage or disadvantage).",
+                "rollIsNullOrUndefined": "The given roll is null or undefined.",
+                "termIsNullOrUndefined": "The given term is null or undefined.",
+                "applyDamageNoPermission": "You do not have permission to apply damage from this message.",
+                "applyDamageNoTokens": "You have no tokens selected or targeted to apply damage to."
+            },
+            "warning": {
+                "emptyDamageField": "One or more damage fields on this item are empty! To roll damage, ensure all damage fields are filled."
+            }
+        },
+        "bonus": {
+            "damageType": "Damage type:",
+            "randomType": "Random type: {types}",
+            "fixedType": "{type} damage"
+        }
+    }
+}
