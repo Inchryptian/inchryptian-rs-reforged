@@ -123,7 +123,7 @@ export class SettingsUtility {
             scope: "client",
             config: true,
             type: Number,
-            default: 0,
+            default: 2,
             choices: {
                 0: CoreUtility.localize(`${MODULE_SHORT}.choices.manual.0`),
                 1: CoreUtility.localize(`${MODULE_SHORT}.choices.manual.1`),
