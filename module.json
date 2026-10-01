@@ -2,13 +2,16 @@
 	"id": "rsreforged",
 	"title": "RSReforged",
 	"description": "Quality-of-life roll automation for the dnd5e system. A maintained fork of Ready Set Roll for D&D5e by MangoFVTT (itself a rewrite of Better Rolls for 5e by RedReign). Targets Foundry VTT v14+ and dnd5e 5.3+.",
-	"version": "4.13.4",
+	"version": "4.13.5",
 	"compatibility": {
 		"minimum": "14",
 		"verified": "14.539",
 		"maximum": "14"
 	},
 	"authors": [
+		{
+			"name": "Inchryptian"
+		},
 		{
 			"name": "arrowedisgaming",
 			"url": "https://github.com/arrowedisgaming"
@@ -54,8 +57,8 @@
 				"type": "system",
 				"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
 				"compatibility": {
-					"minimum": "5.3.0",
-					"verified": "5.3.3"
+					"minimum": "6.0.0",
+					"verified": "6.0.5"
 				}
 			}
 		],
@@ -68,10 +71,10 @@
 		]
 	},
 	"url": "https://github.com/arrowedisgaming/RSReforged",
-	"manifest": "https://raw.githubusercontent.com/arrowedisgaming/RSReforged/master/module.json",
-	"download": "https://github.com/arrowedisgaming/RSReforged/releases/download/release-4.13.4/rsreforged-release-4.13.4.zip",
-	"bugs": "https://github.com/arrowedisgaming/RSReforged/issues",
-	"readme": "https://github.com/arrowedisgaming/RSReforged/blob/master/README.md",
+	"manifest": "https://raw.githubusercontent.com/Inchryptian/inchryptian-rs-reforged/main/module.json",
+	"download": "https://codeload.github.com/Inchryptian/inchryptian-rs-reforged/zip/main",
+	"bugs": "https://github.com/inchryptian/inchryptian-rs-reforged/issues",
+	"readme": "https://github.com/inchryptian/inchryptian-rs-reforged/blob/main/README.md",
 	"media": [
 		{
 			"type": "screenshot",
